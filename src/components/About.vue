@@ -1,53 +1,56 @@
 <template>
   <div class="about">
-      <div class="about-waves">
-          <img :src="waves" alt="waves-svg">
-      </div>
+    <div class="about-waves">
+      <img :src="waves" alt="waves-svg" />
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-   data() {
-       return {
-           waves: require('../assets/svg/waves.svg'),
-       }
-   }
-}
+  data() {
+    return {
+      waves: require("../assets/svg/waves.svg"),
+    };
+  },
+};
 </script>
 
 <style scoped lang="scss">
-    .about {
-        height: 100vh;
-        position: relative;
-    }
-    .about-waves {
-    position: absolute;
+.about {
+  height: 100vh;
+  position: relative;
     overflow: hidden;
-    left: 0;
-    top: 2%;
-    height: 200px;
-animation: move-forever 10s cubic-bezier(.55,.5,.45,.5) infinite;
-    // width: 100%;
+    padding: 0 4em;
 
-    img {
-          overflow: hidden;
-          width: 100%;
-            
 
-    }
-  }
+}
+.about-waves {
+  position: relative;
+  overflow: hidden;
+  left: -4em;
+  
+  width: 100vw;
+  overflow: hidden;
 
-  @keyframes move-forever {
-  0% {
-   transform: translateY(0px);
-  }
-  50% { 
-    transform: translateY(10px);
-  }
-  100%{
-    transform: translateY(0px);
+
+  animation: move-forever 10s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+
+  img {
+    overflow: hidden;
+    width: 100%;
   }
 }
 
+@keyframes move-forever {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 </style>

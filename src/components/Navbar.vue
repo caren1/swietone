@@ -29,7 +29,7 @@ export default {
 <style lang="scss">
 
 .navbar {
-    padding: 2em 3em;
+    padding: 3em 3em;
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -39,7 +39,7 @@ export default {
 }
 
 .logo {
-    max-width: 140px;
+    max-width: 150px;
 }
 
 .logo img {
