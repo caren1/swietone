@@ -4,11 +4,13 @@
         <img :src="swietoneHorizontalLogo" alt="swietone-main-logo"/>
       </div>
       <div class="menu">
+        <div class="menu-kebab">
           <div class="circle"></div>
           <div class="circle"></div>
           <div class="circle"></div>
           <div class="circle"></div>
           <div class="circle"></div>
+        </div>  
       </div>
   </nav>
 </template>
@@ -24,7 +26,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 
 .navbar {
     padding: 2em 3em;
@@ -45,6 +47,19 @@ export default {
 }
 
 .menu {
+  height: 100%;
+}
+
+.circle {
+  width: 6px;
+  height: 6px;
+  margin: 3px;
+  background: #F8DA8F;
+  border-radius: 50%;
+  display: block;
+}
+
+.menu-kebab {
   flex-direction: column;
   position: relative;
   transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -53,20 +68,21 @@ export default {
     position: absolute;
     opacity: 0;
     top: 50%;
-    margin-top: -6px;
+    margin-top: -3px; // here
     left: 50%;
   }
   .circle:nth-child(4) {
-    margin-left: -25px;
+    margin-left: -12px; // here 
   }
   .circle:nth-child(5) {
-    margin-left: 13px;
+    margin-left: 6px; // here
   }
   &:hover,
   &:focus {
     transform: rotate(45deg);
     .circle {
       opacity: 1;
+      cursor: pointer;
     }
   }
 }
