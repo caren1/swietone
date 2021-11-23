@@ -80,7 +80,7 @@ export default {
     position: relative;
     overflow: hidden;
     left: -4em;
-    bottom: -8em;
+    bottom: -7em;
     width: 100vw;
     animation: move-forever 10s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
     
