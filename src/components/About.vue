@@ -38,9 +38,12 @@ export default {
   height: 100vh;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 
   .about-waves {
-    position: relative;
+    position: absolute;
+    top: 0;
     overflow: hidden;
     z-index: 1;
 
@@ -61,8 +64,8 @@ export default {
     justify-content: center;
 
     .faded-circle {
-      width: 700px;
-      height: 700px;
+      width: 750px;
+      height: 750px;
       flex: 1;
       float: left;
       background: linear-gradient(
@@ -77,6 +80,7 @@ export default {
       position: absolute;
       left: -10%;
       z-index: 0;
+      animation:spin 18s linear infinite;
     }
 
     ul {
@@ -92,7 +96,7 @@ export default {
 
     li {
       display: list-item;
-      font-size: 20px;
+      font-size: 24px;
       font-family: "Source Sans Pro", sans-serif;
       color: white;
       font-weight: 200;
@@ -104,12 +108,14 @@ export default {
     padding: 1em 2em;
     position: relative;
     left: 20%;
+    top: 10%;
+
 
     h1 {
         font-family: "Libre Baskerville", serif;
         color: white;
         margin-bottom: 1em;
-        font-size: 32px;
+        font-size: 36px;
   
     }
   }
@@ -126,4 +132,6 @@ export default {
     transform: translateY(0px);
   }
 }
+
+@keyframes spin { 100%{ -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 </style>

@@ -37,7 +37,7 @@ export default {
   position: relative;
 
   .home-intro {
-    margin-top: -6em;
+    // margin-top: -6em;
     display: flex;
     flex-direction: column;
     padding: 3em 5em 2em 5em;
@@ -80,7 +80,7 @@ export default {
     position: relative;
     overflow: hidden;
     left: -4em;
-    bottom: -7em;
+    bottom: -5em;
     width: 100vw;
     animation: move-forever 10s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
     
