@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <section class="about">
     <div class="about-waves">
       <img :src="waves" alt="waves-svg" />
     </div>
@@ -18,7 +18,7 @@
         </ul>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

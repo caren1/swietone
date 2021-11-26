@@ -1,9 +1,10 @@
 <template>
+<header>
   <nav class="navbar">
       <div class="logo">
         <img :src="swietoneHorizontalLogo" alt="swietone-main-logo"/>
       </div>
-      <div class="menu">
+      <div class="menu" @click="$emit('toggleMenu', true)">
         <div class="menu-kebab">
           <div class="circle"></div>
           <div class="circle"></div>
@@ -13,6 +14,7 @@
         </div>  
       </div>
   </nav>
+</header>
 </template>
 
 <script>
@@ -22,6 +24,11 @@ export default {
            swietoneLogo: require('../assets/svg/swietone-main-logo.svg'),
             swietoneHorizontalLogo: require('../assets/svg/swietone-horizontal-logo.svg')
        }
+   },
+   methods: {
+    toggleMenu() {
+       this.$emit('toggleMenu');
+     }
    }
 }
 </script>

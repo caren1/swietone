@@ -26,9 +26,17 @@
                 <img :src="gitIcon" alt="github-icon">
                 <img :src="behanceIcon" alt="behance-icon">
             </div>
-            
         </div>
     </div>
+    <div class="menu-handler" @click="$emit('toggleMenu', false)">
+        <div class="menu-kebab">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>  
+      </div>
   </div>
 </template>
 
@@ -42,13 +50,17 @@ export default {
       behanceIcon: require("../assets/svg/behance-icon.svg"),
     };
   },
+   methods: {
+    toggleMenu() {
+       this.$emit('toggleMenu');
+     }
+   }
 };
 </script>
 
 <style scoped lang="scss">
     .menu {
-        // width: 100%;
-        max-width: 1440px;
+        width: 100vw;
         margin: 0 auto;
         height: 100vh;
         background-color: #0e483e;
@@ -56,6 +68,14 @@ export default {
         align-items: center;
         justify-content: space-evenly;
         padding: 2em;
+        position: absolute;
+        top: 0;
+
+        .menu-handler {
+            position: absolute;
+            top: 6%;
+            right: 7%;
+        }
 
     ul {
         list-style-type: none;

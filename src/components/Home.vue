@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <section class="home">
     <div class="home-intro">
       <h1>
         Modernizacja strony <br />
@@ -11,7 +11,7 @@
     <div class="home-waves">
       <img :src="waves" alt="waves-svg" />
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
