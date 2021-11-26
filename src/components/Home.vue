@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&display=swap");
+
 .home {
   color: #ffffff;
   height: calc(100vh - 100px);
@@ -37,7 +37,6 @@ export default {
   position: relative;
 
   .home-intro {
-    // margin-top: -6em;
     display: flex;
     flex-direction: column;
     padding: 3em 5em 2em 5em;
@@ -83,7 +82,6 @@ export default {
     bottom: -5em;
     width: 100vw;
     animation: move-forever 10s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-    
     overflow: hidden;
 
     img {
@@ -104,6 +102,4 @@ export default {
     transform: translateY(0px);
   }
 }
-
-
 </style>

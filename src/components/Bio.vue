@@ -47,56 +47,52 @@ export default {
 <style lang="scss">
 section {
   height: 100vh;
-  
   position: relative;
 
   .bio {
     // height: 100%;
-    
+
     display: flex;
     align-items: center;
     // justify-content: center;
 
     .info {
       height: 100%;
-        max-width: 50%;
-        color: white;
-        margin-top: 15%;
-        padding: 2em 5em;
-        
-        h3 {
-            font-family: "Libre Baskerville", serif;
-            font-size: 30px;
-        }
+      max-width: 50%;
+      color: white;
+      margin-top: 15%;
+      padding: 2em 5em;
 
-        p{
-          font-family: "Source Sans Pro", sans-serif;
-          margin: 1em 0;
-          font-weight: 300;
-          line-height: 1.2em;
-          font-size: 18px;
-          
-        }
+      h3 {
+        font-family: "Libre Baskerville", serif;
+        font-size: 30px;
+      }
 
-        .socials {
-          
-          img {
-            max-width: 20px;
-            margin-right: 1em;
-          }
+      p {
+        font-family: "Source Sans Pro", sans-serif;
+        margin: 1em 0;
+        font-weight: 300;
+        line-height: 1.2em;
+        font-size: 18px;
+      }
+
+      .socials {
+        img {
+          max-width: 20px;
+          margin-right: 1em;
         }
+      }
     }
 
     .portrait {
-      
-        max-width: 50%;
-        position: absolute;
-        bottom: 5%;
-        right: 0;
+      max-width: 50%;
+      position: absolute;
+      bottom: 5%;
+      right: 0;
 
-        > img {
-            width: 100%;
-        }
+      > img {
+        width: 100%;
+      }
     }
   }
 }

@@ -5,6 +5,7 @@
       <Home />
       <About />
       <Bio />
+      <Footer />
     </div>
     <div v-else>
       <Menu @toggleMenu="isMenuOpen = $event" />
@@ -19,9 +20,10 @@ import Menu from "./components/Menu.vue";
 import Home from "./components/Home.vue";
 import About from "./components/About.vue";
 import Bio from "./components/Bio.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
-  components: { Navbar, Menu, Home, About, Layout, Bio },
+  components: { Navbar, Menu, Home, About, Layout, Bio, Footer },
   data() {
     return {
       isMenuOpen: false,

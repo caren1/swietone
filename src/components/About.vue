@@ -32,7 +32,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&display=swap");
 
 .about {
   height: 100vh;
@@ -80,18 +79,13 @@ export default {
       position: absolute;
       left: -10%;
       z-index: 0;
-      animation:spin 18s linear infinite;
+      animation: spin 12s linear infinite;
     }
 
     ul {
-      // list-style-type: disc;
-      list-style-image: url('../assets/svg/list-style-circle.svg') !important;
-      // overflow: hidden;
+      list-style-image: url("../assets/svg/list-style-circle.svg") !important;
       float: left;
       margin-left: 2em;
-      // shape-outside: circle(50%);
-      // width: 200px;
-      // height: 200px;
     }
 
     li {
@@ -110,13 +104,11 @@ export default {
     left: 20%;
     top: 10%;
 
-
     h1 {
-        font-family: "Libre Baskerville", serif;
-        color: white;
-        margin-bottom: 1em;
-        font-size: 36px;
-  
+      font-family: "Libre Baskerville", serif;
+      color: white;
+      margin-bottom: 1em;
+      font-size: 36px;
     }
   }
 }
@@ -133,5 +125,10 @@ export default {
   }
 }
 
-@keyframes spin { 100%{ -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 </style>

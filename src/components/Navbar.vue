@@ -1,8 +1,8 @@
 <template>
-<header>
-  <nav class="navbar">
+  <header>
+    <nav class="navbar">
       <div class="logo">
-        <img :src="swietoneHorizontalLogo" alt="swietone-main-logo"/>
+        <img :src="swietoneHorizontalLogo" alt="swietone-main-logo" />
       </div>
       <div class="menu" @click="$emit('toggleMenu', true)">
         <div class="menu-kebab">
@@ -11,46 +11,39 @@
           <div class="circle"></div>
           <div class="circle"></div>
           <div class="circle"></div>
-        </div>  
+        </div>
       </div>
-  </nav>
-</header>
+    </nav>
+  </header>
 </template>
 
 <script>
 export default {
-   data() {
-       return {
-           swietoneLogo: require('../assets/svg/swietone-main-logo.svg'),
-            swietoneHorizontalLogo: require('../assets/svg/swietone-horizontal-logo.svg')
-       }
-   },
-   methods: {
-    toggleMenu() {
-       this.$emit('toggleMenu');
-     }
-   }
-}
+  data() {
+    return {
+      swietoneLogo: require("../assets/svg/swietone-main-logo.svg"),
+      swietoneHorizontalLogo: require("../assets/svg/swietone-horizontal-logo.svg"),
+    };
+  }
+};
 </script>
 
 <style lang="scss">
-
 .navbar {
-    padding: 3em 3em;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    
+  padding: 3em 3em;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
 }
 
 .logo {
-    max-width: 150px;
+  max-width: 150px;
 }
 
 .logo img {
-    width: 100%;
+  width: 100%;
 }
 
 .menu {
@@ -61,7 +54,7 @@ export default {
   width: 6px;
   height: 6px;
   margin: 3px;
-  background: #F8DA8F;
+  background: #f8da8f;
   border-radius: 50%;
   display: block;
 }
@@ -79,7 +72,7 @@ export default {
     left: 50%;
   }
   .circle:nth-child(4) {
-    margin-left: -12px; // here 
+    margin-left: -12px; // here
   }
   .circle:nth-child(5) {
     margin-left: 6px; // here
