@@ -24,18 +24,20 @@ export default {
       swietoneLogo: require("../assets/svg/swietone-main-logo.svg"),
       swietoneHorizontalLogo: require("../assets/svg/swietone-horizontal-logo.svg"),
     };
-  }
+  },
 };
 </script>
 
 <style lang="scss">
+@import "@/assets/_variables.scss";
+
 .navbar {
   padding: 3em 3em;
   background: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  color: $crimson-red;
 }
 
 .logo {
@@ -54,7 +56,7 @@ export default {
   width: 6px;
   height: 6px;
   margin: 3px;
-  background: #f8da8f;
+  background: $croisant-yellow;
   border-radius: 50%;
   display: block;
 }

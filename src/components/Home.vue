@@ -25,9 +25,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "@/assets/_variables.scss";
 
 .home {
-  color: #ffffff;
+  color: $white;
   height: calc(100vh - 100px);
   padding: 0 4em;
   text-align: left;
@@ -45,14 +46,14 @@ export default {
   h1 {
     font-size: 50px;
     margin-bottom: 0.5em;
-    font-family: "Libre Baskerville", serif;
+    font-family: $libreBasker;
     font-weight: lighter;
     line-height: 1.1em;
   }
 
   h2 {
     font-size: 30px;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: $sourcePro;
     margin-bottom: 0.5em;
     font-weight: 300;
   }
@@ -62,7 +63,7 @@ export default {
     text-decoration: none;
     font-size: 18px;
     color: white;
-    font-family: "Libre Baskerville", serif;
+    font-family: $libreBasker;
     font-weight: lighter;
     padding: 0.3em;
     border-bottom: 10px solid transparent;
@@ -97,6 +98,9 @@ export default {
   }
   50% {
     transform: translateY(-20px);
+  }
+  75% {
+    transform: translateY(10px);
   }
   100% {
     transform: translateY(0px);

@@ -8,9 +8,11 @@
 export default {};
 </script>
 
-<style>
+<style lang="scss">
+@import "@/assets/_variables.scss";
+
 .layout {
   height: 100%;
-  background-color: #0e483e;
+  background-color: $champion-green;
 }
 </style>

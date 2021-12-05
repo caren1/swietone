@@ -4,7 +4,8 @@
       <div class="info">
         <h3>Wojciech Czarnocki</h3>
         <p>
-          Od prawie 2 lat pracuję jako Junior Java Developer w LSEG, natomiast
+          Obecnie pracuję jako Fullstack Developer w firmie Hapag Lloyd,
+          wcześniej przez 2 lata pracowałem jako Junior Java Engineer, natomiast
           interesuję się również web developmentem jak i szeroko pojętym
           projektowaniem intefejsów użytkownika oraz designem.
         </p>
@@ -45,35 +46,38 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/_variables.scss";
+
 section {
   height: 100vh;
+
   position: relative;
 
   .bio {
-    // height: 100%;
-
     display: flex;
     align-items: center;
-    // justify-content: center;
+    height: 100%;
+    // padding: 1em 3em;
 
     .info {
-      height: 100%;
-      max-width: 50%;
+      // height: 100%;
+      max-width: 40%;
       color: white;
-      margin-top: 15%;
-      padding: 2em 5em;
+      margin-left: 10%;
+      // margin-top: 15%;
+      // padding: 2em 5em;
 
       h3 {
-        font-family: "Libre Baskerville", serif;
-        font-size: 30px;
+        font-family: $libreBasker;
+        font-size: 34px;
       }
 
       p {
-        font-family: "Source Sans Pro", sans-serif;
+        font-family: $sourcePro;
         margin: 1em 0;
         font-weight: 300;
         line-height: 1.2em;
-        font-size: 18px;
+        font-size: 20px;
       }
 
       .socials {
@@ -85,7 +89,7 @@ section {
     }
 
     .portrait {
-      max-width: 50%;
+      max-width: 65%;
       position: absolute;
       bottom: 5%;
       right: 0;

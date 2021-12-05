@@ -32,6 +32,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "@/assets/_variables.scss";
 
 .about {
   height: 100vh;
@@ -48,7 +49,7 @@ export default {
 
     width: 100vw;
     overflow: hidden;
-    animation: move-forever 10s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+    animation: move-forever 8s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 
     img {
       overflow: hidden;
@@ -57,7 +58,7 @@ export default {
   }
   .about-info {
     width: 100%;
-    height: 80%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,12 +67,11 @@ export default {
       width: 750px;
       height: 750px;
       flex: 1;
-      float: left;
-      background: linear-gradient(
-        0deg,
-        rgba(2, 0, 36, 1) 0%,
-        rgba(14, 72, 62, 1) 0%,
-        rgba(248, 218, 143, 1) 100%
+      background-color: rgba(255, 203, 119, 1);
+      background-image: linear-gradient(
+        180deg,
+        rgba(255, 203, 119, 1) 0%,
+        rgba(14, 72, 62, 1) 100%
       );
       border-radius: 100%;
       float: right;
@@ -90,8 +90,8 @@ export default {
 
     li {
       display: list-item;
-      font-size: 24px;
-      font-family: "Source Sans Pro", sans-serif;
+      font-size: 25px;
+      font-family: $sourcePro;
       color: white;
       font-weight: 200;
       line-height: 2em;
@@ -101,14 +101,14 @@ export default {
     z-index: 1;
     padding: 1em 2em;
     position: relative;
-    left: 20%;
+    left: 18%;
     top: 10%;
 
     h1 {
-      font-family: "Libre Baskerville", serif;
+      font-family: $libreBasker;
       color: white;
       margin-bottom: 1em;
-      font-size: 36px;
+      font-size: 40px;
     }
   }
 }
@@ -119,6 +119,9 @@ export default {
   }
   50% {
     transform: translateY(10px);
+  }
+  75% {
+    transform: translateY(15px);
   }
   100% {
     transform: translateY(0px);

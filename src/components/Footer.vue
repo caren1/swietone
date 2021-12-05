@@ -43,6 +43,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/_variables.scss";
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -51,7 +53,7 @@ export default {
   padding: 2em 4em;
 
   .contact {
-    font-family: "Libre Baskerville", serif;
+    font-family: $libreBasker;
   }
 }
 </style>
