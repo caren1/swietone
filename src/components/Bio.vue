@@ -49,14 +49,16 @@ export default {
 @import "@/assets/_variables.scss";
 
 section {
-  height: 100vh;
-
+  min-height: 100vh;
+  height: 100%;
   position: relative;
 
   .bio {
     display: flex;
     align-items: center;
     height: 100%;
+      min-height: 100vh;
+
     // padding: 1em 3em;
 
     .info {

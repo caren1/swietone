@@ -29,7 +29,8 @@ export default {
 
 .home {
   color: $white;
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
+  height: 100%;
   padding: 0 4em;
   text-align: left;
   display: flex;

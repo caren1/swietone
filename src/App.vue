@@ -5,6 +5,7 @@
       <Home />
       <About />
       <Bio />
+      <Logos />
       <Footer />
     </div>
     <div v-else>
@@ -19,11 +20,12 @@ import Navbar from "./components/Navbar.vue";
 import Menu from "./components/Menu.vue";
 import Home from "./components/Home.vue";
 import About from "./components/About.vue";
+import Logos from './components/Logos/Logos.vue'
 import Bio from "./components/Bio.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
-  components: { Navbar, Menu, Home, About, Layout, Bio, Footer },
+  components: { Navbar, Menu, Home, About, Layout, Bio, Footer, Logos },
   data() {
     return {
       isMenuOpen: false,

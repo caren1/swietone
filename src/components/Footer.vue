@@ -31,7 +31,9 @@
         <a href="mailto:czarnocki.w@wp.pl"
           ><img :src="mailCloud" alt="mail-cloud-svg"
         /></a>
-        <p class="company-p">powered by <span class="swietone">swietone.</span></p>
+        <p class="company-p">
+          powered by <span class="swietone">swietone.</span>
+        </p>
       </div>
     </div>
   </footer>
@@ -60,7 +62,6 @@ export default {
   position: relative;
 
   .footer-wrapper {
-    // padding: 2em 4em;
     display: flex;
     width: 100%;
     align-items: center;
@@ -142,7 +143,6 @@ export default {
       right: 8%;
       opacity: 50%;
 
-        
       .swietone {
         font-family: $libreBasker;
         font-size: 16px;

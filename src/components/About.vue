@@ -35,7 +35,8 @@ export default {
 @import "@/assets/_variables.scss";
 
 .about {
-  height: 100vh;
+   min-height: 100vh;
+  height: 100%;
   position: relative;
   overflow: hidden;
   display: flex;
