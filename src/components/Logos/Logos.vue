@@ -91,7 +91,7 @@ section {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    max-width: 80%;
+    max-width: 70%;
     margin: auto;
     // max-height: 80%;
     // border: 1px solid $white;

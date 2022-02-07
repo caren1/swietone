@@ -15,7 +15,7 @@ export default {
     .single-logo {
         // border: 1px solid white;
         // width: 130px;
-        height: 80px;
+        height: 70px;
         max-width: 40%;
         display: flex;
         align-items: center;
